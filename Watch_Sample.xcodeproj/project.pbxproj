@@ -26,6 +26,7 @@
 		DC83CB6F266FD5F30016FD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC83CB6E266FD5F30016FD16 /* Assets.xcassets */; };
 		DC83CB7B266FD5F30016FD16 /* Watch_Sample_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB7A266FD5F30016FD16 /* Watch_Sample_WatchKit_AppTests.swift */; };
 		DC83CB86266FD5F30016FD16 /* Watch_Sample_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB85266FD5F30016FD16 /* Watch_Sample_WatchKit_AppUITests.swift */; };
+		DC83CBA6266FF3920016FD16 /* TableSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CBA5266FF3920016FD16 /* TableSetUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		DC83CB81266FD5F30016FD16 /* Watch_Sample WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_Sample WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC83CB85266FD5F30016FD16 /* Watch_Sample_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch_Sample_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		DC83CB87266FD5F30016FD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC83CBA5266FF3920016FD16 /* TableSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSetUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				DC83CB66266FD5F10016FD16 /* InterfaceController.swift */,
+				DC83CBA5266FF3920016FD16 /* TableSetUp.swift */,
 				DC83CB68266FD5F10016FD16 /* ExtensionDelegate.swift */,
 				DC83CB6A266FD5F10016FD16 /* NotificationController.swift */,
 				DC83CB6C266FD5F10016FD16 /* ComplicationController.swift */,
@@ -559,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC83CB6B266FD5F10016FD16 /* NotificationController.swift in Sources */,
+				DC83CBA6266FF3920016FD16 /* TableSetUp.swift in Sources */,
 				DC83CB6D266FD5F10016FD16 /* ComplicationController.swift in Sources */,
 				DC83CB69266FD5F10016FD16 /* ExtensionDelegate.swift in Sources */,
 				DC83CB67266FD5F10016FD16 /* InterfaceController.swift in Sources */,
@@ -760,7 +764,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "Watch_Sample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -782,7 +786,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "Watch_Sample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -807,7 +811,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				IBSC_MODULE = Watch_Sample_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch_Sample WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.templebond.Watch-Sample.watchkitapp";
@@ -827,7 +831,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				IBSC_MODULE = Watch_Sample_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch_Sample WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.templebond.Watch-Sample.watchkitapp";
@@ -847,7 +851,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = Watch_Sample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -868,7 +872,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = Watch_Sample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -890,7 +894,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = Watch_SampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -913,7 +917,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = Watch_SampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -936,7 +940,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = Watch_SampleUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -958,7 +962,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = Watch_SampleUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -982,7 +986,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "Watch_Sample WatchKit AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1005,7 +1009,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "Watch_Sample WatchKit AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1027,7 +1031,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "Watch_Sample WatchKit AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1048,7 +1052,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "Watch_Sample WatchKit AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

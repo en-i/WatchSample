@@ -6,14 +6,63 @@
 //
 
 import UIKit
+//Watchとの接続の役割
+import WatchConnectivity
 
-class ViewController: UIViewController {
-
+//WCSessionDelegateを追加
+class ViewController: UIViewController, WCSessionDelegate{
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    //Watchに送信する数字
+    var sendInt: Int!
+    @IBOutlet weak var receiveLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBAction func sendButton(_ sender: Any) {
+        //カウントを1進める
+        sendInt += 1
+        //messageにsendIntをセット、keyとしてsendを設定
+        let message = ["send" :sendInt.description]
+        //Watchにデータを送る処理
+        WCSession.default.sendMessage(message, replyHandler:  { reply in print(reply) }, errorHandler: { error in print(error.localizedDescription)})
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //WatchConnectivityのSession開始
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        //数字の初期化
+        sendInt = 0
     }
 
+    //Watchからデータを受け取った時の処理
+    /*func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        receiveLabel.text = message["send"] as? String
+        replyHandler(["watch" : "OK"])
+    }*/
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        DispatchQueue.main.async { () -> Void in
+            if let message = applicationContext["message"] as? Dictionary<String, String> {
+                //データを受け取る
+                self.receiveLabel.text = message["send"]! as String
+                //時刻を受け取る
+                self.timeLabel.text = message["date"]! as String
+            }
+        }
+    }
 
 }
 
