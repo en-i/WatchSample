@@ -36,8 +36,8 @@
                         </group>
                     </items>
                     <connections>
-                        <outlet property="receiveLabel" destination="Ojb-49-7e1" id="klp-eP-nKA"/>
-                        <outlet property="sendTable" destination="eWY-1j-9DQ" id="Vpp-Ma-uZi"/>
+                        <outlet property="receiveLabel" destination="Ojb-49-7e1" id="gkO-Bc-gTF"/>
+                        <outlet property="sendTable" destination="eWY-1j-9DQ" id="fwe-J3-f8C"/>
                     </connections>
                 </controller>
             </objects>

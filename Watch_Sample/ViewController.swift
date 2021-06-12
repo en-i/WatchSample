@@ -48,21 +48,12 @@ class ViewController: UIViewController, WCSessionDelegate{
     }
 
     //Watchからデータを受け取った時の処理
-    /*func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        receiveLabel.text = message["send"] as? String
-        replyHandler(["watch" : "OK"])
-    }*/
-    
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        DispatchQueue.main.async { () -> Void in
-            if let message = applicationContext["message"] as? Dictionary<String, String> {
-                //データを受け取る
-                self.receiveLabel.text = message["send"]! as String
-                //時刻を受け取る
-                self.timeLabel.text = message["date"]! as String
-            }
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        DispatchQueue.main.async {() -> Void in
+            self.receiveLabel.text = message["send"] as? String
+            self.timeLabel.text = message["date"] as? String
+            replyHandler(["watch" : "OK"])
         }
     }
-
 }
 
