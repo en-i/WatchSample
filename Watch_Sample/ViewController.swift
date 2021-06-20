@@ -54,6 +54,8 @@ class ViewController: UIViewController, WCSessionDelegate{
             self.timeLabel.text = message["date"] as? String
             replyHandler(["watch" : "OK"])
         }
+        
     }
+    
 }
 

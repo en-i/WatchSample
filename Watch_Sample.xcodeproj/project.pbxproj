@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC5070C9267F859700055706 /* TableSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CBA5266FF3920016FD16 /* TableSetUp.swift */; };
 		DC83CB2C266FD5E90016FD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB2B266FD5E90016FD16 /* AppDelegate.swift */; };
 		DC83CB2E266FD5E90016FD16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB2D266FD5E90016FD16 /* SceneDelegate.swift */; };
 		DC83CB30266FD5E90016FD16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB2F266FD5E90016FD16 /* ViewController.swift */; };
@@ -26,7 +27,6 @@
 		DC83CB6F266FD5F30016FD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC83CB6E266FD5F30016FD16 /* Assets.xcassets */; };
 		DC83CB7B266FD5F30016FD16 /* Watch_Sample_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB7A266FD5F30016FD16 /* Watch_Sample_WatchKit_AppTests.swift */; };
 		DC83CB86266FD5F30016FD16 /* Watch_Sample_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CB85266FD5F30016FD16 /* Watch_Sample_WatchKit_AppUITests.swift */; };
-		DC83CBA6266FF3920016FD16 /* TableSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CBA5266FF3920016FD16 /* TableSetUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -562,7 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC83CB6B266FD5F10016FD16 /* NotificationController.swift in Sources */,
-				DC83CBA6266FF3920016FD16 /* TableSetUp.swift in Sources */,
+				DC5070C9267F859700055706 /* TableSetUp.swift in Sources */,
 				DC83CB6D266FD5F10016FD16 /* ComplicationController.swift in Sources */,
 				DC83CB69266FD5F10016FD16 /* ExtensionDelegate.swift in Sources */,
 				DC83CB67266FD5F10016FD16 /* InterfaceController.swift in Sources */,

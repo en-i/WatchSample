@@ -24,15 +24,8 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         //カウントを1進める
         sendInt += 1
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "ja_JP")
-        dateFormatter.timeStyle = .medium
-        dateFormatter.dateStyle = .medium
-        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-        let date = dateFormatter.string(from: Date())
-        
         //送信するメッセージ(数字と日付)
-        let message = ["send": sendInt.description,"date": date]
+        let message = ["send": sendInt.description]
         
         //Watchにデータを送る処理
         WCSession.default.sendMessage(message, replyHandler:  { reply in print(reply) }, errorHandler: { error in print(error.localizedDescription)})
@@ -59,11 +52,14 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
             let row = sendTable.rowController(at: index) as! TableSetUp
             row.tableLabel.setText(item)
         }
+        
+        
     }
     
     //Tableをタップした時の処理
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         
+        //タップされた時刻
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
         dateFormatter.timeStyle = .medium
@@ -77,6 +73,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         //Watchにデータを送る処理
         WCSession.default.sendMessage(message, replyHandler:  { reply in print(reply) }, errorHandler: { error in print(error.localizedDescription)})
     }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
     }
@@ -89,5 +86,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         receiveLabel.setText(message["send"] as? String)
         replyHandler(["watch" : "OK"])
+        
     }
+    
 }
